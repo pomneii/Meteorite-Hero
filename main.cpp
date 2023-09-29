@@ -13,7 +13,7 @@ struct Player {
 	sf::Sprite sprite;
 	int arm = 10;
 };
-
+//check git cheoy cheoy
 struct Enemy {
 
 	sf::Sprite shape;
