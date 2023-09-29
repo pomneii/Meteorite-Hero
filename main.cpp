@@ -19,6 +19,10 @@ struct Enemy {
 	sf::Sprite shape;
 	float speed;
 };
+asdfasfasdfassf
+asdfasdfasdf
+fasdfsadf
+fsadf
 
 struct Bullet {
 
