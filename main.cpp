@@ -19,11 +19,7 @@ struct Enemy {
 	sf::Sprite shape;
 	float speed;
 };
-asdfasfasdfassf
-asdfasdfasdf
-fasdfsadf
-fsadf
-//check cheoy cheoy
+
 struct Bullet {
 
 	sf::Sprite bulletSp;
