@@ -39,6 +39,7 @@ private:
 	sf::Font fonts;
 	sf::Font fontss;
 	sf::Text meteorite;
+	sf::Text myName;
 	sf::Text mainMenu[MAX_MAIN_MENU];
 
 	//Background

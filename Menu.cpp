@@ -1,4 +1,4 @@
-
+﻿
 #include "Menu.h"
 
 Menu::Menu(float width, float height) {
@@ -33,7 +33,7 @@ Menu::Menu(float width, float height) {
 
 	logos.setTexture(logoTexs);
 	logos.setScale(sf::Vector2f(3.5f, 3.5f));
-	logos.setPosition(237.f, 317.f);
+	logos.setPosition(237.f, 267.f);
 
 	// METEORITE HERO
 	this->meteorite.setPosition(102.f, 100.f);
@@ -43,35 +43,34 @@ Menu::Menu(float width, float height) {
 	this->meteorite.setString("METEORITE HERO");
 
 	// PLAY
-	this->mainMenu[0].setPosition(223.f, 550.f);
+	this->mainMenu[0].setPosition(223.f, 500.f);
 	this->mainMenu[0].setFont(this->fonts);
 	this->mainMenu[0].setCharacterSize(40);
 	this->mainMenu[0].setFillColor(sf::Color::White);
 	this->mainMenu[0].setString("PLAY");
 
 	// LEADERBOARD
-	this->mainMenu[1].setPosition(106.f, 650.f);
+	this->mainMenu[1].setPosition(106.f, 600.f);
 	this->mainMenu[1].setFont(this->fonts);
 	this->mainMenu[1].setCharacterSize(40);
 	this->mainMenu[1].setFillColor(sf::Color::White);
 	this->mainMenu[1].setString("LEADERBOARD");
 
-	//// HOW TO PLAY
-	//this->mainMenu[2].setPosition(106.f, 650.f);
-	//this->mainMenu[2].setFont(this->fonts);
-	//this->mainMenu[2].setCharacterSize(40);
-	//this->mainMenu[2].setFillColor(sf::Color::White);
-	//this->mainMenu[2].setString("HOW TO PLAY");
-
 	//EXIT
-	this->mainMenu[2].setPosition(236.f, 750.f);
+	this->mainMenu[2].setPosition(236.f, 700.f);
 	this->mainMenu[2].setFont(this->fonts);
 	this->mainMenu[2].setCharacterSize(40);
 	this->mainMenu[2].setFillColor(sf::Color::White);
 	this->mainMenu[2].setString("EXIT");
 
+	// My Name
+	this->myName.setPosition(105.f, 800.f);
+	this->myName.setFont(this->fontss);
+	this->myName.setCharacterSize(22);
+	this->myName.setFillColor(sf::Color::Cyan);
+	this->myName.setString("66010733   Woranuch  Pluengnuch");
+
 	mainMenuSelected = 0;
-	//this->mainMenu[mainMenuSelected].setFillColor(sf::Color::Green);
 }
 
 Menu::~Menu() {
@@ -91,6 +90,8 @@ void Menu::draw(sf::RenderWindow& windows) {
 
 		windows.draw(mainMenu[i]);
 	}
+
+	windows.draw(myName);
 }
 
 void Menu::moveUp() {
@@ -107,10 +108,7 @@ void Menu::moveUp() {
 
 		this->mainMenu[this->mainMenuSelected].setFillColor(sf::Color::Green);
 	}
-
-
 }
-
 
 void Menu::moveDown() {
 
@@ -126,10 +124,7 @@ void Menu::moveDown() {
 		}
 
 		this->mainMenu[this->mainMenuSelected].setFillColor(sf::Color::Green);
-
-
 	}
-
 }
 
 void Menu::setSelected(int n) {
