@@ -1,33 +1,34 @@
 ﻿  main.cpp
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(77,52): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(78,52): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(77,32): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(78,32): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
           with
           [
               T=unsigned int
           ]
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(225,33): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(306,37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(307,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(307,29): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(309,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(450,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(451,41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(464,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(465,39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(472,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(473,39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(511,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(511,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(517,69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(517,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(671,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(672,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(730,33): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
-C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(798,33): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(226,33): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(308,37): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(309,38): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(309,29): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(311,30): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(452,34): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(453,41): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(466,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(467,39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(474,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(475,39): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(513,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(513,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(519,69): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(519,48): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(530,18): warning C4305: '=': truncation from 'double' to 'float'
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(673,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(674,41): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(732,33): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
+C:\KMITL\1D\semester_1\propro\Meteorite_V3_Final\main.cpp(800,33): warning C4353: nonstandard extension used: constant 0 as function expression.  Use '__noop' function intrinsic instead
   Generating code
   1 of 358 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation

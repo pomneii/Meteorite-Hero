@@ -4,20 +4,20 @@
 Menu::Menu(float width, float height) {
 
 	//Load fonts
-	if (!this->fonts.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_Hero\\Fonts\\Valorax-lg25V.otf")) {
+	if (!this->fonts.loadFromFile("font/Valorax-lg25V.otf")) {
 
 		std::cout << "ERROR::GAME::Failed to load fonts" << "\n";
 
 	}
 
 	//Load fontss
-	if (!this->fontss.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_Hero\\Fonts\\Chainwhacks-vm72E.ttf")) {
+	if (!this->fontss.loadFromFile("font/Chainwhacks-vm72E.ttf")) {
 
 		std::cout << "ERROR::GAME::Failed to load fontss" << "\n";
 	}
 
 	// Background mainmenu
-	if (!backgroundTexs.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_Hero\\mainmenu.png")) {
+	if (!backgroundTexs.loadFromFile("image/mainmenu.png")) {
 
 		std::cout << "ERROR::GAME::COULD NOT LOAD BACKGROUND TEXTURE" << "\n";
 	}
@@ -26,7 +26,7 @@ Menu::Menu(float width, float height) {
 	backgrounds.setScale(4.5f, 4.5f);
 
 	// Logo mainmenu
-	if (!logoTexs.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_Hero\\logo.png")) {
+	if (!logoTexs.loadFromFile("image/logo.png")) {
 
 		std::cout << "ERROR::GAME::COULD MOT LOAD LOGO TEXTURE" << "\n";
 	}

@@ -37,7 +37,7 @@ struct History {
 };
 
 int pageNum = 100;
-float playerSpeed = 0.5f;
+float playerSpeed = 0.45f;
 const int maxBullets = 10;
 std::string name;
 int score = 0;
@@ -73,13 +73,14 @@ int main() {
 	srand(static_cast<unsigned>(time(nullptr)));
 
 	sf::RenderWindow window(sf::VideoMode(570, 870), "METEORITE HERO", sf::Style::Close | sf::Style::Titlebar);
+	
 
 	Menu mainMenu(window.getSize().x, window.getSize().y);
 
 	sf::Texture leadBg;
 	sf::Sprite leaderBg;
 
-	if (!leadBg.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\mainmenu.png")) {
+	if (!leadBg.loadFromFile("image/mainmenu.png")) {
 
 		std::cout << "ERROR::GAME::COULD NOT LOAD THE BACKGROUND OF LEADERBOARD" << "\n";
 	}
@@ -188,13 +189,13 @@ void Pname(sf::RenderWindow& window, std::string& name) {
 	}
 
 	sf::Texture backG;
-	backG.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\mainmenu.png");
+	backG.loadFromFile("image/mainmenu.png");
 	sf::Sprite bG;
 	bG.setTexture(backG);
 	bG.setScale(4.5f, 4.5f);
 
 	sf::Font Fontss;
-	Fontss.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\font\\DebugFreeTrial-MVdYB.otf");
+	Fontss.loadFromFile("font/DebugFreeTrial-MVdYB.otf");
 
 	sf::Text inputName;
 	inputName.setFont(Fontss);
@@ -264,28 +265,29 @@ void Pname(sf::RenderWindow& window, std::string& name) {
 }
 
 void game_Play(sf::RenderWindow& window) {
+	window.setFramerateLimit(750);
 
 	sf::Texture gameBg_Tex;
-	gameBg_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\background.png");
+	gameBg_Tex.loadFromFile("image/background.png");
 	sf::Sprite gameBg_Sprite;
 	gameBg_Sprite.setTexture(gameBg_Tex);
 
 	sf::Texture worldBg_Tex;
-	worldBg_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\world.png");
+	worldBg_Tex.loadFromFile("image/world.png");
 	sf::Sprite worldBg_Sprite;
 	worldBg_Sprite.setTexture(worldBg_Tex);
 	worldBg_Sprite.setScale(sf::Vector2f(0.5f, 0.5f));
 	worldBg_Sprite.setPosition(147.f, 696.f);
 
 	sf::Texture player_Tex;
-	player_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\ship.png");
+	player_Tex.loadFromFile("image/ship.png");
 	Player player1;
 	player1.player.setTexture(player_Tex);
 	player1.player.setScale(2.f, 2.f);
 	player1.player.setPosition(250.f, 480.f);
 	
 	sf::Texture bullet_Tex;
-	bullet_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\bullet.png");
+	bullet_Tex.loadFromFile("image/bullet.png");
 	Bullet bullets[15];
 
 	for (int i = 0; i < 10; i++) {
@@ -293,11 +295,11 @@ void game_Play(sf::RenderWindow& window) {
 		bullets[i].active = false;
 		bullets[i].bulletSp.setTexture(bullet_Tex);
 		bullets[i].bulletSp.setScale(0.7f, 0.7f);
-		bullets[i].bulletSp.setPosition(-20.f, -20.f);
+		bullets[i].bulletSp.setPosition(-40.f, -40.f);
 	}
 
 	sf::Texture asteriod_Tex;
-	asteriod_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\asteroid.png");
+	asteriod_Tex.loadFromFile("image/asteroid.png");
 	Enemy enemy[7];
 
 	for (int i = 0; i < 7; i++) {
@@ -310,33 +312,33 @@ void game_Play(sf::RenderWindow& window) {
 	}
 
 	sf::Texture heart_Tex;
-	heart_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\heart.png");
+	heart_Tex.loadFromFile("image/heart.png");
 	sf::Sprite heart_Sprite;
 	heart_Sprite.setTexture(heart_Tex);
 	heart_Sprite.setScale(0.085f, 0.085f);
 	heart_Sprite.setPosition(5.f, 15.f);
 
 	sf::Texture arm_Tex;
-	arm_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\armor.png");
+	arm_Tex.loadFromFile("image/armor.png");
 	sf::Sprite arm_Sprite;
 	arm_Sprite.setTexture(arm_Tex);
 	arm_Sprite.setScale(0.3f, 0.3f);
 	arm_Sprite.setPosition(5.f, 55.f);
 	
 	sf::Texture healthhelp_Tex;
-	healthhelp_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\heart.png");
+	healthhelp_Tex.loadFromFile("image/heart.png");
 	sf::Sprite healthhelp_Sprite;
 	healthhelp_Sprite.setTexture(healthhelp_Tex);
 	healthhelp_Sprite.setScale(0.1f, 0.1f);
 
 	sf::Texture armorhelp_Tex;
-	armorhelp_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\armor.png");
+	armorhelp_Tex.loadFromFile("image/armor.png");
 	sf::Sprite armorhelp_Sprite;
 	armorhelp_Sprite.setTexture(armorhelp_Tex);
 	armorhelp_Sprite.setScale(0.3f, 0.3f);
 
 	sf::Font font;
-	font.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\font\\Valorax-lg25V.otf");
+	font.loadFromFile("font/Valorax-lg25V.otf");
 	sf::Text health_Text;
 	sf::String health_String = std::to_string(player1.health);
 	health_Text.setFont(font);
@@ -520,12 +522,12 @@ void game_Play(sf::RenderWindow& window) {
 
 		if (player1.point >= 300 && player1.point < 500) {
 
-			playerSpeed = 0.45f;
+			playerSpeed = 0.4f;
 		}
 
-		if (player1.point >= 500 && player1.point < 700) {
+		if (player1.point >= 500) {
 
-			playerSpeed = 0.4f;
+			playerSpeed = 0.35;
 		}
 
 		if (player1.player.getGlobalBounds().intersects(healthhelp_Sprite.getGlobalBounds())) {
@@ -589,13 +591,13 @@ void game_Play(sf::RenderWindow& window) {
 void His(sf::RenderWindow& window) {
 
 	sf::Texture His_Tex;
-	His_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\mainmenu.png");
+	His_Tex.loadFromFile("image/mainmenu.png");
 	sf::Sprite His_Sprite;
 	His_Sprite.setTexture(His_Tex);
 	His_Sprite.setScale(4.5f, 4.5f);
 
 	sf::Font fonts;
-	fonts.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\font\\Chainwhacks-vm72E.ttf");
+	fonts.loadFromFile("font/Chainwhacks-vm72E.ttf");
 
 	sf::Text leaderBorad_Text;
 	leaderBorad_Text.setFont(fonts);
@@ -681,13 +683,13 @@ void His(sf::RenderWindow& window) {
 void game_Over(sf::RenderWindow& window) {
 
 	sf::Texture His_Tex;
-	His_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\mainmenu.png");
+	His_Tex.loadFromFile("image/mainmenu.png");
 	sf::Sprite His_Sprite;
 	His_Sprite.setTexture(His_Tex);
 	His_Sprite.setScale(4.5f, 4.5f);
 
 	sf::Font fonts;
-	fonts.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\font\\Chainwhacks-vm72E.ttf");
+	fonts.loadFromFile("font/Chainwhacks-vm72E.ttf");
 
 	sf::Text GameOver_Text;
 	GameOver_Text.setFont(fonts);
@@ -697,7 +699,7 @@ void game_Over(sf::RenderWindow& window) {
 	GameOver_Text.setFillColor(sf::Color::Red);
 
 	sf::Font fontzz;
-	fontzz.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\font\\Chainwhacks-vm72E.ttf");
+	fontzz.loadFromFile("font/Chainwhacks-vm72E.ttf");
 
 	sf::Text GameOverScore_Text;
 	sf::String ScoreString = std::to_string(score);
@@ -758,13 +760,13 @@ void game_Over(sf::RenderWindow& window) {
 void game_Win(sf::RenderWindow& window) {
 
 	sf::Texture win_Tex;
-	win_Tex.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\image\\mainmenu.png");
+	win_Tex.loadFromFile("image/mainmenu.png");
 	sf::Sprite win_Sprite;
 	win_Sprite.setTexture(win_Tex);
 	win_Sprite.setScale(4.5f, 4.5f);
 
 	sf::Font fonts;
-	fonts.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\font\\Chainwhacks-vm72E.ttf");
+	fonts.loadFromFile("font/Chainwhacks-vm72E.ttf");
 
 	sf::Text GameWin_Text;
 	GameWin_Text.setFont(fonts);
@@ -774,7 +776,7 @@ void game_Win(sf::RenderWindow& window) {
 	GameWin_Text.setFillColor(sf::Color::Green);
 
 	sf::Font fontzz;
-	fontzz.loadFromFile("C:\\KMITL\\1D\\semester_1\\propro\\Meteorite_V3_Final\\font\\Chainwhacks-vm72E.ttf");
+	fontzz.loadFromFile("font/Chainwhacks-vm72E.ttf");
 
 	sf::Text congrat_Text;
 	congrat_Text.setFont(fontzz);
